@@ -2,20 +2,15 @@ import React, { useEffect, useRef } from "react";
 import { useGlobalContext } from "./context";
 
 const Colors = () => {
-  // Destructure required properties from the context
   const { location, setIsColorsOpen, tasks, setTasks } = useGlobalContext();
-
-  // Create a reference to the colors container div
   const colorsRef = useRef(null);
 
-  // Set the position of the colors container div based on the location of the task
   useEffect(() => {
     const { top, right } = location;
     colorsRef.current.style.left = `${right + 30}px`;
     colorsRef.current.style.top = `${top - 20}px`;
   }, [location]);
 
-  // Change the color of the task and close the color picker
   const changeColor = (e) => {
     const color = e.target.style.backgroundColor;
     const { id } = location;

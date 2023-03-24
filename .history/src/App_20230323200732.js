@@ -129,12 +129,10 @@ const App = () => {
 	  
     </div>
 	<div class="footer">
-		<a href='https://github.com/Darylcosm0/todo-ap' target='_blank' rel="noopener noreferrer"><FaGithub className='github'/></a>
+		<a href='https://github.com/ilyasbelaoud' target='_blank' rel="noopener noreferrer"><FaGithub className='github'/></a>
 	</div>
 	</>
   );
 };
 
 export default App;
-
-t
